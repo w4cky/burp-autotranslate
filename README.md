@@ -38,8 +38,27 @@ W naszej karcie „PL Translate → AdvisoryPL” kliknij Copy AdvisoryPL (plain
 PPM na zaznaczonych issue → Copy translated (plain text).
 
 
+
+
+WAZNE:
+```
+➜  burp-autotranslate-1-2 cat pom.xml |grep Path 
+      <systemPath>/Applications/Burp Suite Professional.app/Contents/Resources/app/burpsuite_pro.jar</systemPath>
+➜  burp-autotranslate-1-2 
+```
+Podaj tam link do twojego burpa przed zbudowaniem
+
+
 Jak zbudować i użyć
+
 cd burp-autotranslate-1.1.1
+
 mvn clean package -DskipTests -q
+
 Załaduj w Burpie fat JAR:
+
 target/burp-autotranslate-pl-1.1.1-fat.jar
+
+
+
+
